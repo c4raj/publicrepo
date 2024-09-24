@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6809d75d057043f0bb6e2120014e5f51721f0219
 with customers as (
     Select 
         id as customer_id,
@@ -6,6 +11,10 @@ with customers as (
 
         from raw.online_shop.customers
 ),
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6809d75d057043f0bb6e2120014e5f51721f0219
 orders as 
 (
     select 
@@ -25,7 +34,13 @@ customer_orders as (
         count(order_id) as number_of_orders
 
     from orders
+<<<<<<< HEAD
     group by customer_id        
+=======
+    group by customer_id
+        
+
+>>>>>>> 6809d75d057043f0bb6e2120014e5f51721f0219
 ),
 final as (
     select
@@ -40,4 +55,8 @@ final as (
     left join customer_orders using (customer_id)
 
 )
+<<<<<<< HEAD
 select * from final;
+=======
+select * from final
+>>>>>>> 6809d75d057043f0bb6e2120014e5f51721f0219
