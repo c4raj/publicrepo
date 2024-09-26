@@ -1,2 +1,3 @@
-SELECT *
-FROM {{ first_macro() }}
+
+ 
+ {{ my_macro() }} 

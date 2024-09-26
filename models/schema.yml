@@ -1,0 +1,48 @@
+
+version: 2
+
+models:
+    - name: newtest_model
+      description: "test model"
+
+    - name: macro_example
+      description: "Macro Example"
+      columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+            - unique
+            - not_null
+
+    - name: dim_customers
+      description: "Customer Dimension"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          
+          - name: first_name,
+            description: "Customer First Name"
+
+          - name: last_name,
+            description: "Customer Last Name"
+
+          - name: first_order_date,
+            description: "Customer First Order Date"
+
+          - name: most_recent_order_date,
+            description: "Customer Most Recent Order Date"
+
+          - name: most_recent_order_date,
+            description: "Customer Most Recent Order Date"
+
+          - name: number_of_orders,
+            description: "Number of orders"
+            
+
+          
+
+
+        

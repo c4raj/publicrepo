@@ -1,5 +1,5 @@
 {% macro my_macro() %}
 SELECT *
 FROM dim_customers
-WHERE created_at >= DATE_TRUNC('week', CURRENT_DATE)
+WHERE first_order_date = DATE_TRUNC('week', CURRENT_DATE)
 {% endmacro %}

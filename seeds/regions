@@ -1,0 +1,3 @@
+select region_code, region_name from(values ("USA", "North America"), ("EU", "Europe"),("AS","Asia")
+
+

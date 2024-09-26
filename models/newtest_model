@@ -1,0 +1,4 @@
+select 
+    user_id, 
+    {{ ref('some_table') }}
+from {{ ref('users') }}
